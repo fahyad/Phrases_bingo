@@ -76,7 +76,7 @@ h1, h2, h3 {
 
 .bingo-grid, .bingo-grid-input {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Flexible columns */
+    grid-template-columns: repeat(4, 1fr); /* Flexible columns */
     gap: 8px; /* Increased gap */
     border: 1px solid #ecf0f1; /* Very light border */
     padding: 8px;
