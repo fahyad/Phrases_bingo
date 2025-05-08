@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginSection" class="section">
+        <h1> ⋆˙⟡ B I N G O ⋆˙⟡ </h1>
+        <div class="player-login">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" autocomplete="username">
+            <button id="loginButton">Login / Load Sheet</button>
+        </div>
+    </div>
+
+    <div id="gameSection" class="section" style="display: none;">
+        <h2 id="welcomeMessage"></h2>
+        <hr>
+
+        <div id="bingoSheetArea">
+            <div id="bingoSheetInputGrid" class="bingo-grid-input" style="display: none;">
+                </div>
+            <div id="bingoSheetDisplayGrid" class="bingo-grid" style="display: none;">
+                </div>
+            <button id="saveSheetButton" style="display: none;">Save Bingo Sheet</button>
+            <p id="sheetStatusMessage"></p>
+        </div>
+        <button id="editSheetButton" style="display: none;">Edit Sheet</button>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

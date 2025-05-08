@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Silkscreen', sans-serif; /* Added sans-serif fallback */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Darker text for better readability */
+}
+
+.section {
+    background-color: #FFD1DC; /* pasteel pink background for sections */
+    padding: 25px; /* Increased padding */
+    border-radius: 10px; /* Softer rounded corners */
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    text-align: center;
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 700px; /* Slightly wider max-width */
+}
+
+h1, h2, h3 {
+    color: #000000; /* Dark blue-grey for headings */
+}
+
+.player-login label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.player-login input[type="text"] {
+    padding: 10px; /* Increased padding */
+    border: 1px solid #bdc3c7; /* Lighter grey border */
+    border-radius: 5px; /* Rounded corners for input */
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Silkscreen', sans-serif; /* Added font */
+}
+
+#loginButton, #saveSheetButton, #logoutButton, #editSheetButton {
+    padding: 12px 20px; /* Increased padding */
+    background-color: #FFD1DC; 
+    color: rgb(3, 3, 3);
+    border: solid 1px #000000; /* black border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Silkscreen', sans-serif; /* Added font */
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#loginButton:hover, #saveSheetButton:hover, #editSheetButton:hover {
+    background-color: #eba7b7; /* Darker blue on hover */
+}
+
+#logoutButton {
+    background-color: #FFD1DC; /* Red for logout */
+    float: right; /* Position to the right */
+}
+#logoutButton:hover {
+    background-color: #eba7b7; /* Darker red on hover */
+}
+
+#editSheetButton {
+    background-color: #FFD1DC; /* Orange for edit */
+    float: left; /* Position to the left */
+}
+#editSheetButton:hover {
+    background-color: #eba7b7; /* Darker orange on hover */
+}
+
+
+.bingo-grid, .bingo-grid-input {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Flexible columns */
+    gap: 8px; /* Increased gap */
+    border: 1px solid #ecf0f1; /* Very light border */
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfdfe; /* Slightly off-white grid background */
+}
+
+.bingo-grid { /* Specific for display grid */
+    grid-auto-rows: minmax(60px, auto); /* Ensure rows can grow if content is large */
+}
+
+
+.bingo-tile {
+    border: 1px solid #dde0e1; /* Light grey tile border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Silkscreen', sans-serif; /* Added font */
+    word-break: break-word;
+    padding: 5px; /* More padding inside tile */
+    cursor: pointer;
+    background-color: #ffffff; /* White tile background */
+    min-height: 60px; /* Minimum height for tiles */
+    border-radius: 4px; /* Slightly rounded tile corners */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.bingo-tile:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.bingo-tile.marked {
+    background-color: #debfc6; /* Green for marked */
+    color: rgb(0, 0, 0); /* White text on marked tile */
+    text-decoration: line-through;
+    text-decoration-color: #020202; /* Red line-through */
+    font-weight: bold;
+}
+
+.bingo-grid-input input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Silkscreen', sans-serif; /* Added font */
+    border: 1px solid #dde0e1; /* Consistent border */
+    min-height: 50px;
+    border-radius: 4px;
+}
+
+hr {
+    margin: 15px 0; /* Increased margin for hr */
+    border: 0;
+    height: 1px;
+    background: #ecf0f1; /* Light grey hr */
+}
+
+#sheetStatusMessage {
+    margin-top: 15px;
+    font-style: italic;
+    color: #030303; /* Green for success messages */
+}
