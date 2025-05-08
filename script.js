@@ -27,7 +27,7 @@ const saveSheetButton = document.getElementById('saveSheetButton');
 const sheetStatusMessage = document.getElementById('sheetStatusMessage');
 
 /** @const {number} The size of the bingo grid (e.g., 5 for a 5x5 grid). */
-const BINGO_SIZE = 5;
+const BINGO_SIZE = 4;
 
 // --- localStorage Helper ---
 /**
